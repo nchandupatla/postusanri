@@ -6,7 +6,8 @@ let _db;
 
 module.exports = {
   connect() {
-    client.connect('mongodb://localhost:27017/postusanri', (err, db) => {
+    client.connect(process.env.MONGODB_URI, (err, db) => {
+    // client.connect('mongodb://localhost:27017/postusanri', (err, db) => {
       if(err) {
         console.log("Error connecting to Mongo - check mongod connection");
         process.exit(1);
