@@ -1,25 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="olympics">
-<head>
-  <meta charset="UTF-8">
-  <title>POST USA NRI</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,400italic">
-  <link rel="stylesheet" href="styles/app.css">
-  <style>
-    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-      display: none !important;
-    }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <div class="cell">
-      <h1 class="logo">US NRI POSTS</h1>
+<html lang="en" ng-app="suchi">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>WeDesi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+   <link rel="stylesheet" href="styles/app.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#3c3241">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="fa fa-universal-access" aria-hidden="true" style="color:#5cb85c;font-size:25px"></i>&nbsp;&nbsp;<span style="color:white;font-size:25px">WeDesi</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+           <!--  <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div> -->
+            <a ui-sref="viewAll"><i class="fa fa-list-alt" aria-hidden="true" style="color:white;font-size:15px"></i>&nbsp;<span style="color:white;font-size:15px">Listings</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a ui-sref="post">
+            <button type="submit" class="btn btn-success" ng-click="">Post an ad</button>
+            </a>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+      <form class="navbar-form navbar-center">
+       <div class="form-group">
+         <select class="form-control">
+            <option>All</option>
+            <option>Buy/Sell</option>
+            <option>Rentals</option>
+            <option>Car Pool</option>
+          </select>
+          </div>
+            <div class="form-group">
+              <input type="text" placeholder="I'm looking for..." class="form-control" style="width:500px">
+            </div>
+            <div class="form-group">
+              in <input type="text" placeholder="zipcode or location" class="form-control">
+            </div>
+            <a ui-sref="viewAll">
+            <button type="submit" class="btn btn-post">Search</button>
+            </a>
+          </form>
+      </div>
     </div>
-  </div>
 
-    <div class="cell" ui-view></div>
+    <div class="container" ui-view>
 
-    <script src="dist/bundle.js"></script>
+    </div> <!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+         <p class="text-muted text-center" style="padding-top:20px">@Copyrights WeDesi 2016</p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="libs/bootstrap-select/dist/js/bootstrap-select.js"></script>
+ <!--  <script src="libs/bootstrap-select/dist/js/i18n/defaults-*.min.js"></script> -->
+  <script src="dist/bundle.js"></script>
+  <script type="text/javascript">
+    
+$(document).ready(function() {
+   $('.selectpicker').selectpicker();
+});
+
+  </script>
+       <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+          <script type="text/javascript">
+               $(document).ready(function() {
+               $('.selectpicker').selectpicker();
+              });
+          </script>
   </body>
 </html>

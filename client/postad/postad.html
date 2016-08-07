@@ -1,0 +1,61 @@
+<form ng-submit="savePost()">
+<dl class="dl-horizontal">
+  <dt>Category</dt>
+  <dd>
+  	<select class="form-control" ng-model="post.category">
+  	<option>Buy/Sell</option>
+    <option>Rentals</option>
+    <option>Car Pool</option>
+  </select>
+  </dd><br>
+  <dt>Sub-Category</dt>
+  <dd>
+  	<select class="form-control" ng-model="post.subcategory">
+    <option>Motor Vehicles</option>
+    <option>Electronics</option>
+    <option>Furniture</option>
+    <option>Others</option>
+  </select>
+  </dd><br>
+  <hr>
+  <dt>Title</dt>
+  <dd>
+  	<input type="text" placeholder="Post Title" class="form-control" ng-model="post.title">
+  </dd><br>
+  <dt>Description</dt>
+  <dd>
+  	<textarea class="form-control" placeholder="Optional" ng-model="post.description"></textarea>
+  </dd><br>
+  <dt>Price</dt>
+  <dd>
+  	<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" ng-model="post.price">
+  <span class="input-group-addon">.00</span>
+</div>
+  </dd><br>
+  <dt>Zipcode</dt>
+  <dd>
+  	<input type="text" placeholder="zipcode" class="form-control" ng-model="post.zipcode">
+  </dd><br>
+  <hr>
+  <h4 class="text-center">Contact Information</h4>
+   <dt>Name</dt>
+  <dd>
+  	<input type="text" placeholder="Name" class="form-control" ng-model="post.user.name">
+  </dd><br>
+   <dt>Phone</dt>
+  <dd>
+  	<input type="text" placeholder="Phone Number" class="form-control" ng-model="post.user.phone">
+  </dd><br>
+   <dt>Email</dt>
+  <dd>
+  	<input type="text" placeholder="Email Address" class="form-control" ng-model="post.user.email">
+  </dd><br>
+   <dt></dt>
+  <dd>
+  <button type="submit" class="btn btn-success">Post</button>
+  </dd>
+</dl>
+</form>
+{{post}}

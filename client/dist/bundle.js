@@ -9,58 +9,41 @@ require('angular-ui-router');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_angular2.default.module('olympics', ["ui.router"]).config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/sports');
-
-  $stateProvider.state('sports', {
-    url: '/sports',
-    templateUrl: 'sports/sports-nav.html',
-    resolve: {
-      sportsService: function sportsService($http) {
-        return $http.get('/sports');
-      }
+_angular2.default.module('suchi', ["ui.router"]).config(function ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/home');
+  $stateProvider.state('home', {
+    url: '/home',
+    templateUrl: 'home.html',
+    controller: function controller($location) {
+      console.log('in home');
     },
-    controller: function controller(sportsService, $location) {
-      this.sports = sportsService.data;
+    controllerAs: 'homeCtrl'
+  });
 
-      this.isActive = function (sport) {
-        var pathRegexp = /sports\/(\w+)/;
-        var match = pathRegexp.exec($location.path());
-
-        console.log('hi');
-        if (match === null || match.length === 0) return false;
-        var selectedSportName = match[1];
-        console.log('below', selectedSportName, sport);
-
-        return sport === selectedSportName;
+  $stateProvider.state('post', {
+    url: '/post-an-ad',
+    templateUrl: 'postad/postad.html',
+    controller: function controller($location, $state, $scope) {
+      $scope.savePost = function () {
+        console.log($scope.post);
+        $state.go('viewPost');
       };
     },
-    controllerAs: 'sportsCtrl'
-  }).state('sports.medals', {
-    url: '/:sportName',
-    templateUrl: 'sports/sports-medals.html',
-    resolve: {
-      sportService: function sportService($http, $stateParams) {
-        return $http.get('/sports/' + $stateParams.sportName);
-      }
-    },
-    controller: function controller(sportService) {
-      this.sport = sportService.data;
-    },
-    controllerAs: 'sportCtrl'
-  }).state('sports.new', {
-    url: '/:sportName/medal/new',
-    templateUrl: 'sports/new-medal.html',
-    controller: function controller($stateParams, $state, $http) {
-      this.sportName = $stateParams.sportName;
+    controllerAs: 'postCtrl'
+  });
 
-      this.saveMedal = function (medal) {
-        $http({ method: 'POST', url: '/sports/' + $stateParams.sportName + '/medals', data: { medal: medal } }).then(function () {
-          $state.go('sports.medals', { sportName: $stateParams.sportName });
-        });
-      };
-    },
-    controllerAs: 'newMedalCtrl'
+  $stateProvider.state('viewPost', {
+    url: '/view',
+    templateUrl: 'postad/view-post.html',
+    controller: function controller($location, $state, $scope) {},
+    controllerAs: 'viewPostCtrl'
+  });
+
+  $stateProvider.state('viewAll', {
+    url: '/view-all',
+    templateUrl: 'postad/viewall.html',
+    controller: function controller($location, $state, $scope) {},
+    controllerAs: 'viewAllCtrl'
   });
 });
 
