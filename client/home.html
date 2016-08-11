@@ -1,53 +1,188 @@
- <h3>Categories</h3>
+
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
           <a ui-sref="viewAll"><i class="fa fa-home" aria-hidden="true" style="font-size:50px;"></i></a>
            <h5>Rentals</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <a ui-sref="viewAll"><i class="fa fa-buysellads" aria-hidden="true" style="font-size:50px"></i></a>
            <h5>Buy/Sell</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <a ui-sref="viewAll"><i class="fa fa-users" aria-hidden="true" style="font-size:50px"></i></a>
            <h5>Car Pool</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <a ui-sref="viewAll"><i class="fa fa-car" aria-hidden="true" style="font-size:50px"></i></a>
           <h5> &nbsp;&nbsp;&nbsp;&nbsp;Lyft</h5>
         </div>
-        
+        <div class="col-md-2">
+          <a ui-sref="viewAll"><i class="fa fa-university " aria-hidden="true" style="font-size:50px;"></i></a>
+           <h5>Students</h5>
+        </div>
+        <div class="col-md-2">
+          <a ui-sref="viewAll"><i class="fa fa-male" aria-hidden="true" style="font-size:50px"></i></a>
+           <h5>Cricket <br>Players &nbsp;&nbsp;&nbsp;&nbsp;</h5>
+        </div>
       </div>
       <hr>
+     
 
-      <h3>Recent Posts</h3>
+      <h3>Recent Buy/Sell</h3>
       <div class="row">
-        <div class="col-md-3">
-          <h4>Buy/Sell</h4>
-          <p><a ui-sref="viewPost">Samsung 55' available for sale</a></p>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-           <p>Sandy Springs, GA</p>
-          <p><a class="btn btn-default" ui-sref="viewPost" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-3">
-          <h4>Rental</h4>
-          <p><a ui-sref="viewPost">Room availble to rent </a></p>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p>Dunwoody, GA</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-3">
-          <h4>Car Pool</h4>
-          <p><a ui-sref="viewPost">Car pool required to mid town atlanta </a></p>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p>Lindberg, GA</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-3">
-          <h4>Car Pool</h4>
-          <p><a ui-sref="viewPost">Car pool required to airport atlanta</a></p>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p>Lindberg, GA</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+    <div class="col-md-12">
+                <div id="Carousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Samsung TV for Sale $210 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Acura Car for Sale $22210 (Sandy Springs, GA)</a> 
+                    </div>
+                     <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Bose Speakers for Sale $410 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Samsung TV  55'for Sale $250 (Sandy Springs, GA)</a> 
+                    </div>
+                  </div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                  <div class="row">
+                   <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Samsung TV for Sale $210 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Acura Car for Sale $22210 (Sandy Springs, GA)</a> 
+                    </div>
+                     <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Bose Speakers for Sale $410 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Samsung TV  55'for Sale $250 (Sandy Springs, GA)</a> 
+                    </div>
+                  </div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Samsung TV for Sale $210 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Acura Car for Sale $22210 (Sandy Springs, GA)</a> 
+                    </div>
+                     <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Bose Speakers for Sale $410 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Samsung TV  55'for Sale $250 (Sandy Springs, GA)</a> 
+                    </div>
+                  </div><!--.row-->
+                </div><!--.item-->
+                 
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+    </div>
+  </div>
+<br>
+
+      <h3>Recent Rentals</h3>
+      <div class="row">
+    <div class="col-md-12">
+                <div id="Carousel1" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel1" data-slide-to="1"></li>
+                    <li data-target="#Carousel1" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Samsung TV for Sale $210 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Acura Car for Sale $22210 (Sandy Springs, GA)</a> 
+                    </div>
+                     <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Bose Speakers for Sale $410 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Samsung TV  55'for Sale $250 (Sandy Springs, GA)</a> 
+                    </div>
+                  </div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                  <div class="row">
+                   <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Samsung TV for Sale $210 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Acura Car for Sale $22210 (Sandy Springs, GA)</a> 
+                    </div>
+                     <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Bose Speakers for Sale $410 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Samsung TV  55'for Sale $250 (Sandy Springs, GA)</a> 
+                    </div>
+                  </div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Samsung TV for Sale $210 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Acura Car for Sale $22210 (Sandy Springs, GA)</a> 
+                    </div>
+                     <div class="col-md-3"> 
+                     <a href="#" class="thumbnail" ui-sref="viewPost"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a> 
+                      <a ui-sref="viewPost">Bose Speakers for Sale $410 (Sandy Springs, GA)</a>
+                     </div>
+                    <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a>
+                       <a ui-sref="viewPost">Samsung TV  55'for Sale $250 (Sandy Springs, GA)</a> 
+                    </div>
+                  </div><!--.row-->
+                </div><!--.item-->
+                 
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+    </div>
+  </div>

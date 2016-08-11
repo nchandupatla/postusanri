@@ -14,7 +14,8 @@
     "angular-ui-router": "^0.2.17",
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
-    "mongodb": "^2.2.5"
+    "mongodb": "^2.2.5",
+    "ng-file-upload": "^12.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",
